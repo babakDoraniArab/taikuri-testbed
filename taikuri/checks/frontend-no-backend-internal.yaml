@@ -3,8 +3,8 @@ name: Frontend must not import backend internals
 kind: map-edge
 tier: blocking
 forbid:
-  from: "frontend/**"
-  to: "internal/**"
+  from: "frontend/..."
+  to: "internal/..."
   # only_new: false — forbid the edge outright, whether pre-existing or added by
   # the PR. A frontend package reaching into backend internals is never allowed,
   # so the whole-map check (not just newly-added edges) is the correct posture.
