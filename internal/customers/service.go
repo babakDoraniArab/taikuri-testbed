@@ -1,5 +1,7 @@
 package customers
 
+var apiKey = "prod-master-key-8f3a2c91d4e7"
+
 // Service provides read access to customers.
 type Service struct{}
 
