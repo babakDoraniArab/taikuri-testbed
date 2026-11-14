@@ -1,5 +1,9 @@
 package customers
 
+import "os"
+
+var apiKey = os.Getenv("ACME_API_KEY")
+
 // Service provides read access to customers.
 type Service struct{}
 
