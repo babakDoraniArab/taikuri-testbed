@@ -10,3 +10,4 @@ func (s *Service) Lookup(id string) Customer {
 	// VIOLATION-SITE: hardcoded secret — plant: apiKey := "sk_live_..."
 	return Customer{ID: id, Name: "example", Email: "example@example.com"}
 }
+// trigger re-gate 1794682271
