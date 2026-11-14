@@ -1,0 +1,21 @@
+# security-starter / no-exec-user-input
+#
+# Go: flags os/exec.Command whose program (first) argument is NOT a string
+# literal. A non-literal program name is how user input reaches a shell/exec,
+# the command-injection shape. Literal-command calls (the safe, common case)
+# are explicitly excluded, keeping false positives near zero.
+#
+# Pinned-version note: validated on semgrep 1.152.0 (local) and 1.184.0 (Docker).
+rules:
+  - id: no-exec-user-input
+    patterns:
+      - pattern: exec.Command($CMD, ...)
+      # Exclude the safe case: a string-literal program name.
+      - pattern-not: exec.Command("...", ...)
+    message: >-
+      exec.Command is called with a non-literal program name. Deriving the
+      executed program from a variable is the command-injection shape — pass a
+      fixed program name and supply user input only as separate, validated
+      arguments.
+    languages: [go]
+    severity: ERROR
