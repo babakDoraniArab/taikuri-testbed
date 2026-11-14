@@ -1,0 +1,9 @@
+{
+  "name": "taikuri-testbed-frontend",
+  "version": "0.0.0",
+  "private": true,
+  "description": "TypeScript stub front-end for the taikuri test fixture (no dependencies).",
+  "scripts": {
+    "typecheck": "tsc --noEmit --strict src/index.ts"
+  }
+}
