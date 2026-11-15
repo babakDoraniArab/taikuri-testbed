@@ -1,0 +1,4 @@
+# taikuri repo config — section→code mapping (OQ2 baseline, DECISIONS D2).
+sections:
+  SPEC-001: ["internal/customers", "cmd"]
+  SPEC-002: ["internal/orders"]
