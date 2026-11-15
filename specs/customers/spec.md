@@ -1,7 +1,7 @@
 ---
 spec: SPEC-001
 section: customers
-version: 1
+version: 2
 deps: []
 ---
 
@@ -10,5 +10,5 @@ deps: []
 ## Requirements
 
 - R1: Customer records SHALL be retrieved only through the customers service layer.
-- R2: Customer lookups SHALL use parameterised queries, never string-built SQL.
+- R2: Customer lookups SHALL use parameterised queries exclusively; dynamic SQL strings are forbidden.
 - R3: Service credentials SHALL be loaded from the environment, never committed to source.
