@@ -1,5 +1,6 @@
 id: no-exec-user-input
 name: No exec with a non-literal program name
+code: 20310
 kind: semgrep
 tier: blocking
 # scope omitted (see hardcoded-secret.yaml): the rule file pins languages:[go].

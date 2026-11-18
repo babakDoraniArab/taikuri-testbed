@@ -1,5 +1,6 @@
 id: no-http-no-tls
 name: No plaintext HTTP on a non-localhost bind
+code: 20420
 kind: semgrep
 tier: blocking
 # scope omitted (see hardcoded-secret.yaml): the rule file pins languages:[go].

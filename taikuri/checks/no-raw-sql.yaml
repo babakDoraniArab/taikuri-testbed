@@ -1,5 +1,6 @@
 id: no-raw-sql
 name: No raw SQL built from strings
+code: 20530
 kind: semgrep
 tier: blocking
 # scope omitted (see hardcoded-secret.yaml): the rule file pins languages:[go],

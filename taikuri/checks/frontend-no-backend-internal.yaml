@@ -1,5 +1,6 @@
 id: frontend-no-backend-internal
 name: Frontend must not import backend internals
+code: 40110
 kind: map-edge
 tier: blocking
 forbid:
